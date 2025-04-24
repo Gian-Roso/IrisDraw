@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IrisDraw</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            display: flex;
+        }
+        .content-2 {
+            display: flex;
+            flex-direction: column;
+        }
+        .page {
+            display: flex;
+        }
+        .shadow {
+            box-shadow: inset 2px 2px 2px rgb(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-slate-100 ">
+    <header class="bg-slate-400 text-white ">
+        <h1 class="px-7 pt-2 text-xl font-bold italic underline">Iris Draw</h1>
+        <span class="px-8 italic">A arte tem mais cor</span>
+        <div class="content">
+        </div>
+    </header>
+    <div class="m-8 ">
+        <div class="m-3 bg-gray-100 page content-2">
+            <h2 class="font-bold text-xl">Ofertas</h2>
+            <!-- Container com rolagem horizontal -->
+            <div class="overflow-x-auto whitespace-nowrap m-8 shadow">
+                <!-- Cada imagem precisa ter a classe inline-block e margin -->
+                <img src="assets/pictures/CanetaNamquim.jpg" alt="Produto 1" class="inline-block w-64 h-40 mr-4 ">
+                <img src="assets/pictures/CanetaNamquim.jpg" alt="Produto 2" class="inline-block w-64 h-40 mr-4 ">
+                <img src="assets/pictures/CanetaNamquim.jpg" alt="Produto 3" class="inline-block w-64 h-40 mr-4 ">
+                <img src="assets/pictures/CanetaNamquim.jpg" alt="Produto 3" class="inline-block w-64 h-40 mr-4 ">
+                <img src="assets/pictures/CanetaNamquim.jpg" alt="Produto 3" class="inline-block w-64 h-40 mr-4 ">
+                <img src="assets/pictures/CanetaNamquim.jpg" alt="Produto 3" class="inline-block w-64 h-40 mr-4 ">
+                <img src="assets/pictures/CanetaNamquim.jpg" alt="Produto 3" class="inline-block w-64 h-40 mr-4 ">
+            </div>
+        </div>
+        <div class="m-5">
+            <h3>Produtos</h3>
+            <p>Canetas nanquim</p>
+        </div>
+    </div>
+</body>
+</html>
