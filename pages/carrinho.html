@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IrisDraw</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+        body {
+         font-family: Arial, sans-serif;
+    }
+        .content{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+        .page {
+            display: flex;
+        }
+        .header {
+        position: relative;
+        height: 450px;
+        width: 100%; 
+        display: flex;
+        align-items: center; 
+        overflow: hidden;
+        }
+
+        .logo-font {
+            position: relative;
+          font-family: 'Dancing script', cursive;
+          text-shadow: -4px 4px 6px rgb(255, 227, 100);
+          text-align: center;
+        }
+        .image-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-image: url('../assets/pictures/Iris.png');
+            background-repeat: no-repeat;
+            background-size: cover; /* Mudei de 100% para cover */
+            background-position: center;
+            z-index: 0;
+            opacity: 1;
+            }
+        .faixa {
+          height: 150px;
+          width: 100%;
+        }
+        .content-left {
+          display: flex;
+          justify-content: end;
+          align-items: end;
+        }  
+    </style>
+</head>
+<body class="bg-slate-100 ">
+    <header class="bg-slate-500 text-white header">
+        <div class="image-layer"></div>
+        <h1 class="px-7 text-[150px] font-bold logo-font">Iris Draw
+          <hr class="border-t-4 border-white [box-shadow:0_0_9px_yellow]">
+        <p class="px-8 italic text-6xl logo-font">A arte com mais cor</p>
+        </h1>
+        
+    </header>
+    <nav class="bg-slate-700 text-white p-4 ">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="md:flex space-x-6 text-sm ">
+                <a href="../IrisDrawMain.html" class="text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_9px_yellow] transition">Inicio</a>
+                <a href="/produtos.html" class="text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_9px_yellow] transition">produtos</a>
+                <a href="/ofertas.html" class="text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_9px_yellow] transition">Ofertas</a>
+                <a href="/freteGratis.html" class="text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_9px_yellow] transition">Frete gratis</a>
+                </div>
+            <div class="ml-auto mx-5">
+              <a href="pages/carrinho.html" class=" mx-3 text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_5px_yellow] transition">
+                <i class="fa-solid fa-cart-shopping text-white text-xl"></i>
+              </a>
+              <a href="pages/perfil.html" class="mx-3 text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_5px_yellow] transition">
+                <i class="fa-solid fa-user text-white text-xl"></i>
+              </a>
+            </div>
+        </div>
+    </nav>
+    
+</body>
+</html>
