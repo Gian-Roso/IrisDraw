@@ -50,7 +50,7 @@
             }
         .faixa {
           height: 150px;
-          width: 100%;
+          
         }
         .content-left {
           display: flex;
@@ -72,12 +72,11 @@
         <div class="container mx-auto flex justify-between items-center">
             <div class="md:flex space-x-6 text-sm ">
                 <a href="../IrisDrawMain.html" class="text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_9px_yellow] transition">Inicio</a>
-                <a href="/produtos.html" class="text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_9px_yellow] transition">produtos</a>
-                <a href="/ofertas.html" class="text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_9px_yellow] transition">Ofertas</a>
-                <a href="/freteGratis.html" class="text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_9px_yellow] transition">Frete gratis</a>
+                <a href="produtos.html" class="text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_9px_yellow] transition">produtos</a>
+                <a href="livros.html" class="text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_9px_yellow] transition">Books</a>
                 </div>
             <div class="ml-auto mx-5">
-              <a href="pages/carrinho.html" class=" mx-3 text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_5px_yellow] transition">
+              <a href="carrinho.html" class=" mx-3 text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_5px_yellow] transition">
                 <i class="fa-solid fa-cart-shopping text-white text-xl"></i>
               </a>
               <a href="pages/perfil.html" class="mx-3 text-white hover:scale-[1.5] duration-300 hover:[text-shadow:0_0_5px_yellow] transition">
@@ -86,6 +85,37 @@
             </div>
         </div>
     </nav>
+    <main class="m-8 mx-auto max-w-4xl bg-white rounded-xl shadow-lg p-8">
+      <div class="flex items-center justify-center mb-8">
+        <img src="../assets/icons/perfilIcon.png" alt="Foto de perfil" class="w-32 h-32 rounded-full shadow-md">
+        <div class="ml-6">
+          <h1 class="text-4xl font-bold text-slate-800">Nome do Usuário</h1>
+          <p class="text-slate-600 text-lg">email@email.com</p>
+        </div>
+      </div>
+    
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-slate-100 p-6 rounded shadow hover:shadow-lg transition">
+          <h2 class="text-xl font-semibold mb-2 text-slate-700">Meus Pedidos</h2>
+          <p class="text-slate-600">Acompanhe os pedidos realizados e veja o status de entrega.</p>
+        </div>
+    
+        <div class="bg-slate-100 p-6 rounded shadow hover:shadow-lg transition">
+          <h2 class="text-xl font-semibold mb-2 text-slate-700">Endereços</h2>
+          <p class="text-slate-600">Gerencie seus endereços de entrega e cobrança.</p>
+        </div>
+    
+        <div class="bg-slate-100 p-6 rounded shadow hover:shadow-lg transition">
+          <h2 class="text-xl font-semibold mb-2 text-slate-700">Métodos de Pagamento</h2>
+          <p class="text-slate-600">Adicione ou remova cartões e outras formas de pagamento.</p>
+        </div>
+    
+        <div class="bg-slate-100 p-6 rounded shadow hover:shadow-lg transition">
+          <h2 class="text-xl font-semibold mb-2 text-slate-700">Configurações da Conta</h2>
+          <p class="text-slate-600">Atualize senha, nome, e-mail e outras preferências da conta.</p>
+        </div>
+      </div>
+    </main>
     
 </body>
 </html>
